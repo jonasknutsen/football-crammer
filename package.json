@@ -1,0 +1,42 @@
+{
+  "name": "football-crammer",
+  "version": "0.0.1",
+  "description": "Plan you optimal football holiday in London",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "nect build",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonasknutsen/football-crammer.git"
+  },
+  "author": "Jonas Knutsen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonasknutsen/football-crammer/issues"
+  },
+  "homepage": "https://github.com/jonasknutsen/football-crammer#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.7",
+    "next": "^9.1.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.6.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-config-standard-react": "^9.2.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-standard": "^4.0.1"
+  }
+}
