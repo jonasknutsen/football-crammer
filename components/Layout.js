@@ -46,12 +46,10 @@ const Layout = props => (
         list-style: none;
       }
       h1, h2, h3 {
-        color: rgb(89, 25, 2);
-      }
-      h1, h2, h3 {
         font-weight: 200;
         letter-spacing: .1rem;
         margin-top: 0;
+        color: rgb(61, 37, 11);
       }
       .form-wrapper {
         display: flex;
