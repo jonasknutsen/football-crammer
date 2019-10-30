@@ -13,6 +13,7 @@ const ChoiceButton = ({ name, text, active, dimmed, ...rest }) => (
         margin: .5rem;
         letter-spacing: .1rem;
         color: #fff;
+        width: 30rem;
       }
       button:hover {
         opacity: .8;

@@ -1,6 +1,7 @@
 import React from 'react'
 import ChoiceButton from '../components/ChoiceButton'
 import DateRange from '../components/DateRange'
+import DayPicker from '../components/DayPicker'
 
 class Index extends React.Component {
   constructor (props) {
@@ -46,10 +47,11 @@ class Index extends React.Component {
           dimmed={this.state.searchBy === 'timeperiod'}
           onClick={() => this.handleSearchBy('days')}
         />
-        {this.state.searchBy === 'timeperiod' && <DateRange />}}
+        {this.state.searchBy === 'timeperiod' && <DateRange />}
+        {this.state.searchBy === 'days' && <DayPicker />}
         <style jsx>{`
           .app-wrapper {
-            max-width: 700px;
+            max-width: 1000px;
             margin: 0 auto;
             text-align: center;
           }
