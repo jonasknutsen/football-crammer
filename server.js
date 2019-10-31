@@ -27,14 +27,6 @@ app.prepare().then(() => {
     next()
   })
 
-  /* Fixture
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  router.route('/api/v1/fixtures').get(Fixture.getFixtures)
-  router.route('/api/v1/fixtures/:fixture_id').get(Fixture.getFixture)
-  router.route('/api/v1/fixtures').post(Fixture.addFixture)
-  router.route('/api/v1/fixtures/:fixture_id').put(Fixture.updateFixture)
-  router.route('/api/v1/fixtures/:fixture_id').delete(Fixture.deleteFixture)
-
   /* Team
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   router.route('/api/v1/teams').get(Team.getTeams)
