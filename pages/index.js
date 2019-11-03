@@ -49,11 +49,20 @@ class Index extends React.Component {
         />
         {this.state.searchBy === 'timeperiod' && <DateRange />}
         {this.state.searchBy === 'days' && <DayPicker />}
+        <button onClick={this.handleResetSearch} className='button-reset-form'>Reset form</button>
         <style jsx>{`
           .app-wrapper {
             max-width: 1000px;
             margin: 0 auto;
             text-align: center;
+          }
+          .button-reset-form {
+            background-color: rgb(86, 166, 106);
+            padding: 1rem;
+            font-size: 1rem;
+            letter-spacing: .1rem;
+            color: #fff;
+            align-self: flex-end;
           }
       `}</style>
       </div>
